@@ -1,0 +1,1 @@
+add_library(picrawler SHARED picrawler.cc move.cc)
