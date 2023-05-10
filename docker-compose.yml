@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Docker/Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /raspberrypi
+    tty: true
+    working_dir: /raspberrypi/build
