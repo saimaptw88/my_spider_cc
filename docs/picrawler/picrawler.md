@@ -1,0 +1,103 @@
+## import
+- Robot from robot_hat
+- utils from robot_hat
+
+## Execute
+- test
+
+## Implement
+- Picrawler(Robot) class
+  - class valiables
+    - A = 48
+    - B = 78
+    - C = 33
+    - step_list = { "stand":[], "sit": []}
+
+  - instance valiables
+    - move_list
+    - move_list_add
+    - stand_position
+    - direction
+    - current_coord
+    - coord_temp
+    - servo_position
+    - offset
+
+  - methods
+    - __init__
+    - coord2polar
+    - plar2coord
+    - limit
+    - limit_angle
+    - do_action
+    - set_angle
+    - do_step
+    - current_step_all_leg_angle
+    - add_action
+    - cali_helper_web
+    - do_single_leg
+    - current_step_leg_value
+    - current_step_all_leg_value
+    - mix_step
+
+  - classes
+    - MoveList(dict) class
+      - class valiables
+        - LENGTH_SIDE = 77
+        - X_DEFAULT = 45
+        - X_TURN = 70
+        - X_START = 0
+        - Y_DEFAULT = 45
+        - Y_TURN = 130
+        - Y_WAVE = 120
+        - Y_START = 0
+        - Z_DEFAULT = -50
+        - Z_UP = -30
+        - Z_WAVE = 60
+        - Z_TURN = -40
+        - Z_PUSH = -76
+        - TEMP_A
+        - TEMP_B
+        - TEMP_C
+        - TEMP_ALPHA
+        - TURN_X1
+        - TURN_Y1
+        - TURN_X0
+        - TURN_Y0
+
+      - instance valiables
+        - z_current
+        - stand_position
+        - revovery_step
+        - ready_state
+        - angle
+        - stand
+        - ready
+
+      - methods
+        - __init__
+        - __getitem__
+        - turn_angle_coord
+        - check_stand
+        - normal_action
+        - sit
+        - stand
+        - ready
+        - is_sit
+        - forward
+        - backward
+        - turn_left
+        - turn_right
+        - push_up
+        - wave
+        - look_left
+        - look_right
+        - turn_left_angle
+        - turn_right_angle
+        - look_up
+        - look_down
+        - rotate_body_absolute_x
+        - rotate_body_absolute_y
+        - move_body_absolute
+        - to_red
+        - dance
